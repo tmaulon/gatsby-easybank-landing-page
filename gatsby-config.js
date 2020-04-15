@@ -15,11 +15,19 @@ module.exports = {
 				allExtensions: true, // defaults to false
 			},
 		},
+		`gatsby-transformer-json`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
 				name: `images`,
 				path: `${__dirname}/src/images`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `content`,
+				path: `${__dirname}/data`,
 			},
 		},
 		`gatsby-transformer-sharp`,

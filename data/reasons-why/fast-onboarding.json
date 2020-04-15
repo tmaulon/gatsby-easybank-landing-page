@@ -1,0 +1,18 @@
+{
+    "id": "fast-onboarding",
+    "title": {
+        "fr": "Fast Onboarding",
+        "en": "Fast Onboarding"
+    },
+    "description": {
+        "fr": "We don't do branches. Open your account in minutes online and start taking control of your finances right away.",
+        "en": "We don't do branches. Open your account in minutes online and start taking control of your finances right away."
+    },
+    "picture": {
+        "alt": {
+            "fr": "Fast Onboarding icon",
+            "en": "Fast Onboarding icon"
+        },
+        "src": "/images/icon-onboarding.svg"
+    }
+}

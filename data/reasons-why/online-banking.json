@@ -1,0 +1,18 @@
+{
+    "id": "online-banking",
+    "title": {
+        "fr": "Online banking",
+        "en": "Online banking"
+    },
+    "description": {
+        "fr": "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.",
+        "en": "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world."
+    },
+    "picture": {
+        "alt": {
+            "fr": "Online banking icon",
+            "en": "Online banking icon"
+        },
+        "src": "/images/icon-online.svg"
+    }
+}

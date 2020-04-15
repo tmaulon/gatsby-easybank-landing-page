@@ -1,0 +1,45 @@
+{
+    "presentationSection": {
+        "sectionTitle": {
+            "fr": "Next generation digital banking",
+            "en": "Next generation digital banking"
+        },
+        "sectionDescription": {
+            "fr": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more.",
+            "en": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more."
+        }
+    },
+    "theReasonsWhySection": {
+        "sectionTitle": {
+            "fr": "Why choose Easybank?",
+            "en": "Why choose Easybank?"
+        },
+        "sectionDescription": {
+            "fr": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before.",
+            "en": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before."
+        },
+        "theReasonsWhy": [
+            "online-banking",
+            "simple-budgeting",
+            "fast-onboarding",
+            "open-api"
+        ]
+    },
+    "blogSection": {
+        "sectionTitle": {
+            "fr": "Latest Articles",
+            "en": "Latest Articles"
+        }
+    },
+    "commonRequestInviteCta": {
+        "text": {
+            "fr": "Request invite",
+            "en": "Request invite"
+        },
+        "title": {
+            "fr": "Send an invitation request",
+            "en": "Send an invitation request"
+        },
+        "link": "mailto:request-nvite@easybank.com"
+    }
+}
