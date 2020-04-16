@@ -13,6 +13,6 @@
             "fr": "Online banking icon",
             "en": "Online banking icon"
         },
-        "src": "/images/icon-online.svg"
+        "imageSource": "../images/icon-online.svg"
     }
 }

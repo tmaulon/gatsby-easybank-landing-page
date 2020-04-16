@@ -13,6 +13,6 @@
             "fr": "Simple budgeting icon",
             "en": "Simple budgeting icon"
         },
-        "src": "/images/icon-budgeting.svg"
+        "imageSource": "../images/icon-budgeting.svg"
     }
 }

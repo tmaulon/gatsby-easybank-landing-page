@@ -13,6 +13,6 @@
             "fr": "Fast Onboarding icon",
             "en": "Fast Onboarding icon"
         },
-        "src": "/images/icon-onboarding.svg"
+        "imageSource": "../images/icon-onboarding.svg"
     }
 }

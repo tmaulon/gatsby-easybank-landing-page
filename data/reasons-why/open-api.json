@@ -13,6 +13,6 @@
             "fr": "Open API icon",
             "en": "Open API icon"
         },
-        "src": "/images/icon-api.svg"
+        "imageSource": "../images/icon-api.svg"
     }
 }
