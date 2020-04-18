@@ -1,45 +1,144 @@
 {
-    "presentationSection": {
-        "sectionTitle": {
-            "fr": "Next generation digital banking",
-            "en": "Next generation digital banking"
-        },
-        "sectionDescription": {
-            "fr": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more.",
-            "en": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more."
-        }
-    },
-    "theReasonsWhySection": {
-        "sectionTitle": {
-            "fr": "Why choose Easybank?",
-            "en": "Why choose Easybank?"
-        },
-        "sectionDescription": {
-            "fr": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before.",
-            "en": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before."
-        },
-        "theReasonsWhy": [
-            "online-banking",
-            "simple-budgeting",
-            "fast-onboarding",
-            "open-api"
-        ]
-    },
-    "blogSection": {
-        "sectionTitle": {
-            "fr": "Latest Articles",
-            "en": "Latest Articles"
-        }
-    },
-    "commonRequestInviteCta": {
-        "text": {
-            "fr": "Request invite",
-            "en": "Request invite"
-        },
-        "title": {
-            "fr": "Send an invitation request",
-            "en": "Send an invitation request"
-        },
-        "link": "mailto:request-nvite@easybank.com"
-    }
+	"homePage": {
+		"presentationSection": {
+			"sectionTitle": {
+				"fr": "Next generation digital banking",
+				"en": "Next generation digital banking"
+			},
+			"sectionDescription": {
+				"fr": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more.",
+				"en": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more."
+			},
+			"mockupsPicture": {
+				"alt": {
+					"fr": "Picture of the next generation digital banking with Easybank app",
+					"en": "Picture of the next generation digital banking with Easybank app"
+				},
+				"src": "../images/image-mockups.png"
+			},
+			"desktopBackgroundImage": {
+				"alt": {
+					"fr": "Background image of the next generation digital banking with Easybank app",
+					"en": "Background image of the next generation digital banking with Easybank app"
+				},
+				"src": "../images/bg-intro-desktop.svg"
+			},
+			"mobileBackgroundImage": {
+				"alt": {
+					"fr": "Background image of the next generation digital banking with Easybank app",
+					"en": "Background image of the next generation digital banking with Easybank app"
+				},
+				"src": "../images/bg-intro-mobile.svg"
+			}
+		},
+		"theReasonsWhySection": {
+			"sectionTitle": {
+				"fr": "Why choose Easybank?",
+				"en": "Why choose Easybank?"
+			},
+			"sectionDescription": {
+				"fr": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before.",
+				"en": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before."
+			},
+			"theReasonsWhy": ["online-banking", "simple-budgeting", "fast-onboarding", "open-api"]
+		},
+		"blogSection": {
+			"sectionTitle": {
+				"fr": "Latest Articles",
+				"en": "Latest Articles"
+			}
+		}
+	},
+	"commonComponents": {
+		"logo": {
+			"alt": {
+				"fr": "Easybank Logo - Next generation digital banking",
+				"en": "Easybank Logo - Next generation digital banking"
+			},
+			"src": "../images/logo.svg"
+		},
+		"socialNetworks": [
+			{
+				"icon": {
+					"alt": {
+						"fr": "Easybank Facebook Page Logo - Next generation digital banking",
+						"en": "Easybank Facebook Page Logo - Next generation digital banking"
+					},
+					"src": "../images/icon-facebook.svg"
+				},
+				"title": {
+					"fr": "See our facebook page",
+					"en": "See our facebook page"
+				},
+				"link": "https://www.facebook.com/Easybank/"
+			},
+			{
+				"icon": {
+					"alt": {
+						"fr": "Easybank youtube Page Logo - Next generation digital banking",
+						"en": "Easybank youtube Page Logo - Next generation digital banking"
+					},
+					"src": "../images/icon-youtube.svg"
+				},
+				"title": {
+					"fr": "See our youtube page",
+					"en": "See our youtube page"
+				},
+				"link": "https://www.youtube.com/Easybank/"
+			},
+			{
+				"icon": {
+					"alt": {
+						"fr": "Easybank twitter Page Logo - Next generation digital banking",
+						"en": "Easybank twitter Page Logo - Next generation digital banking"
+					},
+					"src": "../images/icon-twitter.svg"
+				},
+				"title": {
+					"fr": "See our twitter page",
+					"en": "See our twitter page"
+				},
+				"link": "https://www.twitter.com/Easybank/"
+			},
+			{
+				"icon": {
+					"alt": {
+						"fr": "Easybank pinterest Page Logo - Next generation digital banking",
+						"en": "Easybank pinterest Page Logo - Next generation digital banking"
+					},
+					"src": "../images/icon-pinterest.svg"
+				},
+				"title": {
+					"fr": "See our pinterest page",
+					"en": "See our pinterest page"
+				},
+				"link": "https://www.pinterest.com/Easybank/"
+			},
+			{
+				"icon": {
+					"alt": {
+						"fr": "Easybank Instagram Page Logo - Next generation digital banking",
+						"en": "Easybank Instagram Page Logo - Next generation digital banking"
+					},
+					"src": "../images/icon-instagram.svg"
+				},
+				"title": {
+					"fr": "See our instagram page",
+					"en": "See our instagram page"
+				},
+				"link": "https://www.instagram.com/Easybank/"
+			}
+		],
+		"requestInviteCta": {
+			"text": {
+				"fr": "Request invite",
+				"en": "Request invite"
+			},
+			"title": {
+				"fr": "Send an invitation request",
+				"en": "Send an invitation request"
+			},
+			"link": "mailto:request-invite@easybank.com"
+		}
+	}
 }
