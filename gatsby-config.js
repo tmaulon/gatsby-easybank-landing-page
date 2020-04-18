@@ -43,7 +43,7 @@ module.exports = {
 				background_color: `#f3f4f6`,
 				theme_color: `#f3f4f6`,
 				display: `standalone`,
-				icon: `data/images/logo.svg`, // This path is relative to the root of the site.
+				// icon: `data/images/logo.svg`, // This path is relative to the root of the site.
 				icons: [
 					{
 						src: `static/favicons/apple-icon-120.png`,
