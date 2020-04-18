@@ -1,18 +1,18 @@
 {
-    "id": "open-api",
-    "title": {
-        "fr": "Open API",
-        "en": "Open API"
-    },
-    "description": {
-        "fr": "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
-        "en": "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
-    },
-    "picture": {
-        "alt": {
-            "fr": "Open API icon",
-            "en": "Open API icon"
-        },
-        "imageSource": "../images/icon-api.svg"
-    }
+	"id": "open-api",
+	"title": {
+		"fr": "Open API",
+		"en": "Open API"
+	},
+	"description": {
+		"fr": "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
+		"en": "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
+	},
+	"picture": {
+		"alt": {
+			"fr": "Open API icon",
+			"en": "Open API icon"
+		},
+		"src": "../images/icon-api.svg"
+	}
 }
