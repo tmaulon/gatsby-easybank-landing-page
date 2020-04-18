@@ -1,0 +1,19 @@
+{
+	"id": "receive-money-in-any-currenncy-with-no-fees",
+	"date": "Sun Apr 12 2020 17:56:24",
+	"title": {
+		"fr": "Recevez de l'argent dans n'importe quelle devise sans frais",
+		"en": "Receive money in any currency with no fees"
+	},
+	"description": {
+		"fr": "Le monde se rétrécit et nous devenons plus mobiles. Alors, pourquoi devriez-vous être obligé de ne recevoir de l’argent qu’en un seul lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque sequi perferendis quae tempore aspernatur sunt, consectetur minus, dolorem incidunt quasi eum ipsum officia earum voluptatibus magnam optio eligendi expedita!",
+		"en": "The world is getting smaller and we're becoming more mobile. So why should you be forced to only receive money in a single lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque sequi perferendis quae tempore aspernatur sunt, consectetur minus, dolorem incidunt quasi eum ipsum officia earum voluptatibus magnam optio eligendi expedita!"
+	},
+	"picture": {
+		"alt": {
+			"fr": "Ilustration du post Recevez de l'argent dans n'importe quelle devise sans frais",
+			"en": "Ilustration of the post Receive money in any currency with no fees"
+		},
+		"src": "../images/image-currency.jpg"
+	}
+}

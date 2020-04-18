@@ -1,0 +1,19 @@
+{
+	"id": "our-invite-only-beta-accounts-are-now-live",
+	"date": "Wed Apr 15 2020 17:56:24",
+	"title": {
+		"fr": "Nos comptes bêta uniquement sur invitation sont maintenant en ligne!",
+		"en": "Our invite-only Beta accounts are now live!"
+	},
+	"description": {
+		"fr": "Après un travail acharné de toute l'équipe, nous sommes ravis de lancer notre version bêta fermée. Il est facile de demander une invitation sur le site lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque sequi perferendis quae tempore aspernatur sunt, consectetur minus, dolorem incidunt quasi eum ipsum officia earum voluptatibus magnam optio eligendi expedita!",
+		"en": "After a lot of hard work by the whole team, we're excited to launch our closed beta. It's easy to request an invite throught the site lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque sequi perferendis quae tempore aspernatur sunt, consectetur minus, dolorem incidunt quasi eum ipsum officia earum voluptatibus magnam optio eligendi expedita!"
+	},
+	"picture": {
+		"alt": {
+			"fr": "Ilustration du post Nos comptes bêta uniquement sur invitation sont maintenant en ligne",
+			"en": "Ilustration of the post Our invite-only Beta accounts are now live"
+		},
+		"src": "../images/image-confetti.jpg"
+	}
+}

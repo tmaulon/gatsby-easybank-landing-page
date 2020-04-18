@@ -1,0 +1,19 @@
+{
+	"id": "treat-yourself-without-worrying-about-money",
+	"date": "Mon Apr 13 2020 17:56:24",
+	"title": {
+		"fr": "Offrez-vous sans vous soucier de l'argent",
+		"en": "Treat yourself without worrying about money"
+	},
+	"description": {
+		"fr": "Notre fonction de budgétisation simple vous permet de séparer vos dépenses et de fixer des limites réalistes chaque mois. Cela signifie que vous lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque sequi perferendis quae tempore aspernatur sunt, consectetur minus, dolorem incidunt quasi eum ipsum officia earum voluptatibus magnam optio eligendi expedita!",
+		"en": "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque sequi perferendis quae tempore aspernatur sunt, consectetur minus, dolorem incidunt quasi eum ipsum officia earum voluptatibus magnam optio eligendi expedita!"
+	},
+	"picture": {
+		"alt": {
+			"fr": "Ilustration du post Offrez-vous sans vous soucier de l'argent",
+			"en": "Ilustration of the post Treat yourself without worrying about money"
+		},
+		"src": "../images/image-restaurant.jpg"
+	}
+}
