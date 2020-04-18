@@ -76,6 +76,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-## 💫 Deploy
+## 💫 Deployed on Netlify
 
-[![Deployed to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://tm-gatsby-easybank-landing-page.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c6bed251-e592-4c48-876d-9c2c73b6427c/deploy-status)](https://app.netlify.com/sites/tm-gatsby-easybank-landing-page/deploys)
