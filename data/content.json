@@ -2,30 +2,30 @@
 	"homePage": {
 		"presentationSection": {
 			"sectionTitle": {
-				"fr": "Next generation digital banking",
+				"fr": "Banque numérique de nouvelle génération",
 				"en": "Next generation digital banking"
 			},
 			"sectionDescription": {
-				"fr": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more.",
+				"fr": "Prenez votre vie financière en ligne. Votre compte Easybank sera un guichet unique pour les dépenses, les économies, les enchères, les investissements et bien plus encore.",
 				"en": "Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, bidgeting, investing, and much more."
 			},
 			"mockupsPicture": {
 				"alt": {
-					"fr": "Picture of the next generation digital banking with Easybank app",
+					"fr": "Image de la nouvelle génération de services bancaires numériques avec l'application Easybank",
 					"en": "Picture of the next generation digital banking with Easybank app"
 				},
 				"src": "../images/image-mockups.png"
 			},
 			"desktopBackgroundImage": {
 				"alt": {
-					"fr": "Background image of the next generation digital banking with Easybank app",
+					"fr": "Image  d'arrière-plan de la nouvelle génération de services bancaires numériques avec l'application Easybank",
 					"en": "Background image of the next generation digital banking with Easybank app"
 				},
 				"src": "../images/bg-intro-desktop.svg"
 			},
 			"mobileBackgroundImage": {
 				"alt": {
-					"fr": "Background image of the next generation digital banking with Easybank app",
+					"fr": "Image  d'arrière-plan de la nouvelle génération de services bancaires numériques avec l'application Easybank",
 					"en": "Background image of the next generation digital banking with Easybank app"
 				},
 				"src": "../images/bg-intro-mobile.svg"
@@ -33,18 +33,18 @@
 		},
 		"theReasonsWhySection": {
 			"sectionTitle": {
-				"fr": "Why choose Easybank?",
+				"fr": "Pourquoi choisir Easybank ?",
 				"en": "Why choose Easybank?"
 			},
 			"sectionDescription": {
-				"fr": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before.",
+				"fr": "Nous utilisons l'Open Banking pour transformer votre compte bancaire en votre centre financier. <br> Contrôlez vos finances comme jamais auparavant.",
 				"en": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before."
 			},
 			"theReasonsWhy": ["online-banking", "simple-budgeting", "fast-onboarding", "open-api"]
 		},
 		"blogSection": {
 			"sectionTitle": {
-				"fr": "Latest Articles",
+				"fr": "Derniers Articles",
 				"en": "Latest Articles"
 			}
 		}
@@ -52,7 +52,7 @@
 	"commonComponents": {
 		"logo": {
 			"alt": {
-				"fr": "Easybank Logo - Next generation digital banking",
+				"fr": "Logo Easybank - Banque numérique de nouvelle génération",
 				"en": "Easybank Logo - Next generation digital banking"
 			},
 			"src": "../images/logo.svg"
@@ -61,13 +61,13 @@
 			{
 				"icon": {
 					"alt": {
-						"fr": "Easybank Facebook Page Logo - Next generation digital banking",
+						"fr": "Logo Page Facebook Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank Facebook Page Logo - Next generation digital banking"
 					},
 					"src": "../images/icon-facebook.svg"
 				},
 				"title": {
-					"fr": "See our facebook page",
+					"fr": "Voir notre page facebook",
 					"en": "See our facebook page"
 				},
 				"link": "https://www.facebook.com/Easybank/"
@@ -75,13 +75,13 @@
 			{
 				"icon": {
 					"alt": {
-						"fr": "Easybank youtube Page Logo - Next generation digital banking",
+						"fr": "Logo Page youtube Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank youtube Page Logo - Next generation digital banking"
 					},
 					"src": "../images/icon-youtube.svg"
 				},
 				"title": {
-					"fr": "See our youtube page",
+					"fr": "Voir notre page youtube",
 					"en": "See our youtube page"
 				},
 				"link": "https://www.youtube.com/Easybank/"
@@ -89,13 +89,13 @@
 			{
 				"icon": {
 					"alt": {
-						"fr": "Easybank twitter Page Logo - Next generation digital banking",
+						"fr": "Logo Page twitter Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank twitter Page Logo - Next generation digital banking"
 					},
 					"src": "../images/icon-twitter.svg"
 				},
 				"title": {
-					"fr": "See our twitter page",
+					"fr": "Voir notre page twitter",
 					"en": "See our twitter page"
 				},
 				"link": "https://www.twitter.com/Easybank/"
@@ -103,13 +103,13 @@
 			{
 				"icon": {
 					"alt": {
-						"fr": "Easybank pinterest Page Logo - Next generation digital banking",
+						"fr": "Logo Page pinterest Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank pinterest Page Logo - Next generation digital banking"
 					},
 					"src": "../images/icon-pinterest.svg"
 				},
 				"title": {
-					"fr": "See our pinterest page",
+					"fr": "Voir notre page pinterest",
 					"en": "See our pinterest page"
 				},
 				"link": "https://www.pinterest.com/Easybank/"
@@ -117,13 +117,13 @@
 			{
 				"icon": {
 					"alt": {
-						"fr": "Easybank Instagram Page Logo - Next generation digital banking",
+						"fr": "Logo Page Instagram Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank Instagram Page Logo - Next generation digital banking"
 					},
 					"src": "../images/icon-instagram.svg"
 				},
 				"title": {
-					"fr": "See our instagram page",
+					"fr": "Voir notre page instagram",
 					"en": "See our instagram page"
 				},
 				"link": "https://www.instagram.com/Easybank/"
