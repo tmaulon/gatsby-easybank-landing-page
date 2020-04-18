@@ -1,16 +1,16 @@
 {
 	"id": "fast-onboarding",
 	"title": {
-		"fr": "Fast Onboarding",
+		"fr": "Intégration rapide",
 		"en": "Fast Onboarding"
 	},
 	"description": {
-		"fr": "We don't do branches. Open your account in minutes online and start taking control of your finances right away.",
+		"fr": "Nous ne faisons pas de succursales. Ouvrez votre compte en quelques minutes en ligne et commencez immédiatement à prendre le contrôle de vos finances.",
 		"en": "We don't do branches. Open your account in minutes online and start taking control of your finances right away."
 	},
 	"picture": {
 		"alt": {
-			"fr": "Fast Onboarding icon",
+			"fr": "Icône intégration rapide",
 			"en": "Fast Onboarding icon"
 		},
 		"src": "../images/icon-onboarding.svg"

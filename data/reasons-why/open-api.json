@@ -1,16 +1,16 @@
 {
 	"id": "open-api",
 	"title": {
-		"fr": "Open API",
+		"fr": "API ouverte",
 		"en": "Open API"
 	},
 	"description": {
-		"fr": "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
+		"fr": "Gérez votre épargne, vos placements, votre pension et bien plus encore à partir d'un seul compte. Le suivi de votre argent n'a jamais été aussi simple.",
 		"en": "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier."
 	},
 	"picture": {
 		"alt": {
-			"fr": "Open API icon",
+			"fr": "Icône API ouverte",
 			"en": "Open API icon"
 		},
 		"src": "../images/icon-api.svg"
