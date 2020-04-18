@@ -18,7 +18,7 @@ module.exports = {
 		// {
 		// 	resolve: `gatsby-source-filesystem`,
 		// 	options: {
-		// 		name: `imageSource`,
+		// 		name: `src`,
 		// 		path: `./data/images`,
 		// 	},
 		// },
@@ -196,19 +196,19 @@ module.exports = {
 						type: `image/png`,
 					},
 				],
-				cache_busting_mode: 'none'
+				cache_busting_mode: "none",
 			},
 		},
 		// this (optional) plugin enables Progressive Web App + Offline functionality
 		// To learn more, visit: https://gatsby.dev/offline
 		// `gatsby-plugin-offline`,
 		{
-			resolve: 'gatsby-plugin-offline',
+			resolve: "gatsby-plugin-offline",
 			options: {
 				workboxConfig: {
-					globPatterns: ['**/*']
-				}
-			}
+					globPatterns: ["**/*"],
+				},
+			},
 		},
 	],
 }
