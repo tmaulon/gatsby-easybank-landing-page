@@ -24,7 +24,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 
 	return (
 		<>
-			<Header siteTitle={data.site.siteMetadata.title} />
+			<Header />
 			<main>{children}</main>
 			<Footer />
 		</>

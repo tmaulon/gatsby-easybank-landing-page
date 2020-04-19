@@ -14,21 +14,21 @@
 					"fr": "Image de la nouvelle génération de services bancaires numériques avec l'application Easybank",
 					"en": "Picture of the next generation digital banking with Easybank app"
 				},
-				"src": "../images/image-mockups.png"
+				"src": "./images/image-mockups.png"
 			},
 			"desktopBackgroundImage": {
 				"alt": {
 					"fr": "Image  d'arrière-plan de la nouvelle génération de services bancaires numériques avec l'application Easybank",
 					"en": "Background image of the next generation digital banking with Easybank app"
 				},
-				"src": "../images/bg-intro-desktop.svg"
+				"src": "./images/bg-intro-desktop.png"
 			},
 			"mobileBackgroundImage": {
 				"alt": {
 					"fr": "Image  d'arrière-plan de la nouvelle génération de services bancaires numériques avec l'application Easybank",
 					"en": "Background image of the next generation digital banking with Easybank app"
 				},
-				"src": "../images/bg-intro-mobile.svg"
+				"src": "./images/bg-intro-mobile.png"
 			}
 		},
 		"theReasonsWhySection": {
@@ -55,7 +55,7 @@
 				"fr": "Logo Easybank - Banque numérique de nouvelle génération",
 				"en": "Easybank Logo - Next generation digital banking"
 			},
-			"src": "../images/logo.svg"
+			"src": "./images/logo.png"
 		},
 		"socialNetworks": [
 			{
@@ -64,7 +64,7 @@
 						"fr": "Logo Page Facebook Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank Facebook Page Logo - Next generation digital banking"
 					},
-					"src": "../images/icon-facebook.svg"
+					"src": "./images/icon-facebook.png"
 				},
 				"title": {
 					"fr": "Voir notre page facebook",
@@ -78,7 +78,7 @@
 						"fr": "Logo Page youtube Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank youtube Page Logo - Next generation digital banking"
 					},
-					"src": "../images/icon-youtube.svg"
+					"src": "./images/icon-youtube.png"
 				},
 				"title": {
 					"fr": "Voir notre page youtube",
@@ -92,7 +92,7 @@
 						"fr": "Logo Page twitter Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank twitter Page Logo - Next generation digital banking"
 					},
-					"src": "../images/icon-twitter.svg"
+					"src": "./images/icon-twitter.png"
 				},
 				"title": {
 					"fr": "Voir notre page twitter",
@@ -106,7 +106,7 @@
 						"fr": "Logo Page pinterest Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank pinterest Page Logo - Next generation digital banking"
 					},
-					"src": "../images/icon-pinterest.svg"
+					"src": "./images/icon-pinterest.png"
 				},
 				"title": {
 					"fr": "Voir notre page pinterest",
@@ -120,7 +120,7 @@
 						"fr": "Logo Page Instagram Easybank - Banque numérique de nouvelle génération",
 						"en": "Easybank Instagram Page Logo - Next generation digital banking"
 					},
-					"src": "../images/icon-instagram.svg"
+					"src": "./images/icon-instagram.png"
 				},
 				"title": {
 					"fr": "Voir notre page instagram",

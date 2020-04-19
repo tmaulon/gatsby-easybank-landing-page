@@ -1,20 +1,14 @@
 import { Link } from "gatsby"
 import React from "react"
+import styled from "styled-components"
+import { Colors } from "../utils/colors"
+import { Logo, HamburgerMenuIcon, CloseIcon } from "./common/icons"
+import { Container, Wrapper } from "./container"
+import { Button } from "./common/button"
 
-export const Header = ({ siteTitle }: { siteTitle: string }) => (
-	<header
-		style={{
-			background: `rebeccapurple`,
-			marginBottom: `1.45rem`,
-		}}
-	>
-		<div
-			style={{
-				margin: `0 auto`,
-				maxWidth: 960,
-				padding: `1.45rem 1.0875rem`,
-			}}
-		>
+export const Header = () => (
+	<StyledHeader>
+		<StyledContainer>
 			<h1 style={{ margin: 0 }}>
 				<Link
 					to="/"
@@ -23,9 +17,24 @@ export const Header = ({ siteTitle }: { siteTitle: string }) => (
 						textDecoration: `none`,
 					}}
 				>
-					{siteTitle}
+					<Logo fill={Colors.primary.darkBlue} />
 				</Link>
 			</h1>
-		</div>
-	</header>
+			<button onClick={() => alert("open mobile menu")}>
+				<HamburgerMenuIcon />
+			</button>
+		</StyledContainer>
+	</StyledHeader>
 )
+
+const StyledHeader = styled.header`
+	background: ${Colors.neutral.white};
+	padding: 0.8rem 0;
+	position: relative;
+	z-index: 10;
+`
+const StyledContainer = styled(Wrapper)`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+`
