@@ -1,15 +1,15 @@
 import { FluidObject, FixedObject } from "gatsby-image"
 
-export interface FluidSharpImage {
+export interface IFluidSharpImageSource {
 	childImageSharp: {
 		fluid: FluidObject | FluidObject[]
 	}
 }
 
-export interface FixedSharpImage {
+export interface IFixedSharpImageSource {
 	childImageSharp: {
 		fixed: FixedObject | FixedObject[]
 	}
 }
 
-export type ImageSource = string | FluidSharpImage | FixedSharpImage
+export type ImageSource = string | IFluidSharpImageSource | IFixedSharpImageSource

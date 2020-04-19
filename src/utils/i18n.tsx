@@ -1,4 +1,4 @@
-import { ImageSource } from "./sharpImage"
+import { ImageSource, IFluidSharpImageSource, IFixedSharpImageSource } from "./sharpImage"
 
 export type Locale = "fr" | "en"
 
@@ -17,7 +17,21 @@ export interface I18nMedia {
 	}
 }
 export interface I18nPicture {
-	src: ImageSource
+	src: string
+	alt: {
+		fr: string
+		en: string
+	}
+}
+export interface I18nFluidPicture {
+	src: IFluidSharpImageSource
+	alt: {
+		fr: string
+		en: string
+	}
+}
+export interface I18nFixedPicture {
+	src: IFixedSharpImageSource
 	alt: {
 		fr: string
 		en: string
