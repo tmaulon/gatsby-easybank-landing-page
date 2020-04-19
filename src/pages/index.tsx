@@ -32,8 +32,21 @@ interface IDataJson {
 	homePage: IHomePage
 	commonComponents: ICommonComponents
 }
+export interface IReasonWhy {
+	id: string
+	title: I18nString
+	description: I18nString
+	picture: I18nFluidPicture
+}
+interface IReasonWhyNode {
+	node: IReasonWhy
+}
+export interface IReasonsWhyEdges {
+	edges: IReasonWhyNode[]
+}
 interface IData {
 	dataJson: IDataJson
+	allReasonsWhyJson: IReasonsWhyEdges
 }
 
 const IndexPage = () => {
@@ -118,12 +131,43 @@ const IndexPage = () => {
 					}
 				}
 			}
+			allReasonsWhyJson(sort: { fields: id, order: ASC }) {
+				edges {
+					node {
+						id
+						title {
+							en
+							fr
+						}
+						description {
+							en
+							fr
+						}
+						picture {
+							alt {
+								en
+								fr
+							}
+							src {
+								childImageSharp {
+									fluid {
+										...GatsbyImageSharpFluid_withWebp
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	`)
 
 	const { homePage, commonComponents } = data.dataJson
 	const { presentationSection, theReasonsWhySection } = homePage
 	const { requestInviteCta } = commonComponents
+	const { allReasonsWhyJson } = data
+
+	console.log("reasonsWhy : ", allReasonsWhyJson)
 
 	return (
 		<Layout>
@@ -139,7 +183,7 @@ const IndexPage = () => {
 			<ReasonsWhySection
 				sectionTitle={theReasonsWhySection.sectionTitle}
 				sectionDescription={theReasonsWhySection.sectionDescription}
-				theReasonsWhy={theReasonsWhySection.theReasonsWhy}
+				allReasonsWhyJson={allReasonsWhyJson}
 			/>
 		</Layout>
 	)
