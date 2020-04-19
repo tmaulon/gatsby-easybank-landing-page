@@ -4,23 +4,30 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import { Layout } from "../components/layout"
 import { Image } from "../components/image"
 import { SEO } from "../components/seo"
-import { I18nString, I18nPicture, I18nTextCta } from "../utils/i18n"
+import { I18nString, I18nPicture, I18nTextCta, I18nFluidPicture } from "../utils/i18n"
 import { PresentationSection } from "../components/presentation-section"
+import { ReasonsWhySection } from "../components/reasons-why-section"
 
 export interface IPresentationSection {
 	sectionTitle: I18nString
 	sectionDescription: I18nString
-	mockupsPicture: I18nPicture
-	desktopBackgroundImage: I18nPicture
-	mobileBackgroundImage: I18nPicture
+	mockupsPicture: I18nFluidPicture
+	desktopBackgroundImage: I18nFluidPicture
+	mobileBackgroundImage: I18nFluidPicture
 }
-
+export interface ITheReasonsWhySection {
+	sectionTitle: I18nString
+	sectionDescription: I18nString
+	theReasonsWhy: string[]
+}
 export interface ICommonComponents {
 	requestInviteCta: I18nTextCta
 }
 interface IHomePage {
 	presentationSection: IPresentationSection
+	theReasonsWhySection: ITheReasonsWhySection
 }
+
 interface IDataJson {
 	homePage: IHomePage
 	commonComponents: ICommonComponents
@@ -36,10 +43,16 @@ const IndexPage = () => {
 				homePage {
 					presentationSection {
 						desktopBackgroundImage {
-							src
 							alt {
 								en
 								fr
+							}
+							src {
+								childImageSharp {
+									fluid {
+										...GatsbyImageSharpFluid_withWebp
+									}
+								}
 							}
 						}
 						sectionDescription {
@@ -55,17 +68,42 @@ const IndexPage = () => {
 								en
 								fr
 							}
-							src
+							src {
+								childImageSharp {
+									fluid {
+										...GatsbyImageSharpFluid_withWebp
+									}
+								}
+							}
 						}
 						mobileBackgroundImage {
 							alt {
 								en
 								fr
 							}
-							src
+							src {
+								childImageSharp {
+									fluid {
+										...GatsbyImageSharpFluid_withWebp
+									}
+								}
+							}
 						}
 					}
+
+					theReasonsWhySection {
+						sectionDescription {
+							fr
+							en
+						}
+						sectionTitle {
+							fr
+							en
+						}
+						theReasonsWhy
+					}
 				}
+
 				commonComponents {
 					requestInviteCta {
 						link
@@ -84,30 +122,25 @@ const IndexPage = () => {
 	`)
 
 	const { homePage, commonComponents } = data.dataJson
-	const { presentationSection } = homePage
-	const {
-		sectionTitle,
-		sectionDescription,
-		mockupsPicture,
-		desktopBackgroundImage,
-		mobileBackgroundImage,
-	} = presentationSection
+	const { presentationSection, theReasonsWhySection } = homePage
 	const { requestInviteCta } = commonComponents
 
 	return (
 		<Layout>
 			<SEO title="Home" />
 			<PresentationSection
-				sectionTitle={sectionTitle}
-				sectionDescription={sectionDescription}
-				mockupsPicture={mockupsPicture}
-				desktopBackgroundImage={desktopBackgroundImage}
-				mobileBackgroundImage={mobileBackgroundImage}
+				sectionTitle={presentationSection.sectionTitle}
+				sectionDescription={presentationSection.sectionDescription}
+				mockupsPicture={presentationSection.mockupsPicture}
+				desktopBackgroundImage={presentationSection.desktopBackgroundImage}
+				mobileBackgroundImage={presentationSection.mobileBackgroundImage}
 				requestInviteCta={requestInviteCta}
 			/>
-			{/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-			<Image />
-		</div> */}
+			<ReasonsWhySection
+				sectionTitle={theReasonsWhySection.sectionTitle}
+				sectionDescription={theReasonsWhySection.sectionDescription}
+				theReasonsWhy={theReasonsWhySection.theReasonsWhy}
+			/>
 		</Layout>
 	)
 }
