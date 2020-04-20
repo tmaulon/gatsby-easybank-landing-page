@@ -34,6 +34,7 @@ interface IDataJson {
 }
 export interface IReasonWhy {
 	id: string
+	order: number
 	title: I18nString
 	description: I18nString
 	picture: I18nFluidPicture
@@ -113,7 +114,6 @@ const IndexPage = () => {
 							fr
 							en
 						}
-						theReasonsWhy
 					}
 				}
 
@@ -131,10 +131,11 @@ const IndexPage = () => {
 					}
 				}
 			}
-			allReasonsWhyJson(sort: { fields: id, order: ASC }) {
+			allReasonsWhyJson(sort: { fields: order, order: ASC }) {
 				edges {
 					node {
 						id
+						order
 						title {
 							en
 							fr
@@ -167,6 +168,7 @@ const IndexPage = () => {
 	const { requestInviteCta } = commonComponents
 	const { allReasonsWhyJson } = data
 
+	console.log("theReasonsWhySection.theReasonsWhy : ", theReasonsWhySection.theReasonsWhy)
 	console.log("reasonsWhy : ", allReasonsWhyJson)
 
 	return (
