@@ -49,24 +49,55 @@ export const PresentationSection = ({
 				position: "absolute",
 			}}
 		/>
-		<StyledContainer>
+		<MockupsImageWrapper>
 			<StyledMockupsImage fluid={mockupsPicture.src.childImageSharp.fluid} alt={mockupsPicture.alt.en} />
-			<Title>{sectionTitle.en}</Title>
-			<Text>{sectionDescription.en}</Text>
-			<StyledLink title={requestInviteCta.title.en} to={requestInviteCta.link}>
-				<Button>{requestInviteCta.text.en}</Button>
-			</StyledLink>
+		</MockupsImageWrapper>
+		<StyledContainer>
+			<TextContentWrapper>
+				<Title>{sectionTitle.en}</Title>
+				<Text>{sectionDescription.en}</Text>
+				<StyledLink title={requestInviteCta.title.en} to={requestInviteCta.link}>
+					<Button>{requestInviteCta.text.en}</Button>
+				</StyledLink>
+			</TextContentWrapper>
 		</StyledContainer>
 	</StyledSection>
 )
 const StyledSection = styled.section`
 	position: relative;
 	margin-top: -60px;
-	z-index: 0;
+	z-index: 10;
 	padding-bottom: 100px;
+	@media screen and (min-width: 768px) {
+		margin-top: 0;
+		padding: 186px 0 170px;
+	}
 `
 const StyledContainer = styled(Wrapper)`
 	position: relative;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		width: 100%;
+	}
+`
+const TextContentWrapper = styled.div`
+	@media screen and (min-width: 768px) {
+		flex: 0 0 100%;
+		max-width: 430px;
+	}
+`
+const MockupsImageWrapper = styled.div`
+	@media screen and (min-width: 768px) {
+		display: block;
+		max-width: 650px;
+		position: absolute;
+		top: -105px;
+		right: -320px;
+		width: 100%;
+	}
+	@media screen and (min-width: 992px) {
+		right: -110px;
+	}
 `
 const StyledMockupsImage = styled(Img)`
 	top: -50px;
@@ -74,6 +105,9 @@ const StyledMockupsImage = styled(Img)`
 
 	& img {
 		margin: 0;
+	}
+	@media screen and (min-width: 768px) {
+		top: 0;
 	}
 `
 const MobileBackgroundImage = styled(BackgroundImage)`
@@ -92,12 +126,13 @@ const MobileBackgroundImage = styled(BackgroundImage)`
 `
 const DesktopBackgroundImage = styled(BackgroundImage)`
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -190px;
+	right: -370px;
 	display: none;
 	@media screen and (min-width: 768px) {
 		display: block;
 		width: 100%;
+		height: 848px;
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -111,6 +146,9 @@ const Title = styled.h2`
 	text-align: center;
 	color: ${Colors.primary.darkBlue};
 	margin: 0 0 20px;
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
 `
 const Text = styled.p`
 	font-family: ${Typography.fontFamily.mainSansSerif};
@@ -118,8 +156,14 @@ const Text = styled.p`
 	font-size: ${Typography.fontSize.main};
 	text-align: center;
 	color: ${Colors.neutral.grayishBlue};
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
 `
 const StyledLink = styled(Link)`
 	display: block;
 	text-align: center;
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
 `

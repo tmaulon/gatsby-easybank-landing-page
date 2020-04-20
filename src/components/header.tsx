@@ -31,7 +31,7 @@ const StyledHeader = styled.header`
 	background: ${Colors.neutral.white};
 	padding: 0.8rem 0;
 	position: relative;
-	z-index: 10;
+	z-index: 20;
 `
 const StyledContainer = styled(Wrapper)`
 	display: flex;
