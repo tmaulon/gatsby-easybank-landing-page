@@ -34,4 +34,5 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 }
 const StyledMain = styled.main`
 	background-color: ${Colors.neutral.veryLightGray};
+	overflow: hidden;
 `
