@@ -11,7 +11,9 @@ export const Typography = {
 		Helvetica Neue, sans-serif`,
 	},
 	fontSize: {
+		legend: `.75rem`,
 		main: `.9375rem`,
+		postTitles: `1.125rem`,
 		subtitles: `1.25rem`,
 		titles: `1.5rem`,
 		mainTitle: `2.4rem`,
