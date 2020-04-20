@@ -10,6 +10,8 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { Header } from "./header"
 import { Footer } from "./footer"
+import styled from "styled-components"
+import { Colors } from "../utils/colors"
 
 export const Layout = ({ children }: { children: ReactNode }) => {
 	const data = useStaticQuery(graphql`
@@ -25,8 +27,11 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 	return (
 		<>
 			<Header />
-			<main>{children}</main>
+			<StyledMain>{children}</StyledMain>
 			<Footer />
 		</>
 	)
 }
+const StyledMain = styled.main`
+	background-color: ${Colors.neutral.veryLightGray};
+`
