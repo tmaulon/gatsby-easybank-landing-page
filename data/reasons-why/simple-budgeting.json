@@ -1,5 +1,6 @@
 {
 	"id": "simple-budgeting",
+	"order": 2,
 	"title": {
 		"fr": "Budgétisation simple",
 		"en": "Simple budgeting"

@@ -1,5 +1,6 @@
 {
 	"id": "fast-onboarding",
+	"order": 3,
 	"title": {
 		"fr": "Intégration rapide",
 		"en": "Fast Onboarding"

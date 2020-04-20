@@ -1,5 +1,6 @@
 {
 	"id": "online-banking",
+	"order": 1,
 	"title": {
 		"fr": "Services bancaires en ligne",
 		"en": "Online banking"

@@ -40,7 +40,20 @@
 				"fr": "Nous utilisons l'Open Banking pour transformer votre compte bancaire en votre centre financier. <br> Contrôlez vos finances comme jamais auparavant.",
 				"en": "We leverage Open Banking to turn your bank account into your financial hub.<br>Control your finances like never before."
 			},
-			"theReasonsWhy": ["online-banking", "simple-budgeting", "fast-onboarding", "open-api"]
+			"theReasonsWhy": [
+				{
+					"reason": "online-banking"
+				},
+				{
+					"reason": "simple-budgeting"
+				},
+				{
+					"reason": "fast-onboarding"
+				},
+				{
+					"reason": "open-api"
+				}
+			]
 		},
 		"blogSection": {
 			"sectionTitle": {

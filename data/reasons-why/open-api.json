@@ -1,5 +1,6 @@
 {
 	"id": "open-api",
+	"order": 4,
 	"title": {
 		"fr": "API ouverte",
 		"en": "Open API"
