@@ -73,6 +73,9 @@ const ReasonsList = styled.ul`
 	margin: 0;
 	grid-gap: 40px;
 	@media screen and (min-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (min-width: 992px) {
 		grid-template-columns: repeat(4, 1fr);
 	}
 `
