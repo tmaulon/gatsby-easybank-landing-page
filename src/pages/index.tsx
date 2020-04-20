@@ -7,6 +7,7 @@ import { SEO } from "../components/seo"
 import { I18nString, I18nPicture, I18nTextCta, I18nFluidPicture } from "../utils/i18n"
 import { PresentationSection } from "../components/presentation-section"
 import { ReasonsWhySection } from "../components/reasons-why-section"
+import { BlogSection } from "../components/blog-section"
 
 export interface IPresentationSection {
 	sectionTitle: I18nString
@@ -20,12 +21,16 @@ export interface ITheReasonsWhySection {
 	sectionDescription: I18nString
 	theReasonsWhy: string[]
 }
+export interface IBlogSection {
+	sectionTitle: I18nString
+}
 export interface ICommonComponents {
 	requestInviteCta: I18nTextCta
 }
 interface IHomePage {
 	presentationSection: IPresentationSection
 	theReasonsWhySection: ITheReasonsWhySection
+	blogSection: IBlogSection
 }
 
 interface IDataJson {
@@ -48,6 +53,22 @@ export interface IReasonsWhyEdges {
 interface IData {
 	dataJson: IDataJson
 	allReasonsWhyJson: IReasonsWhyEdges
+	allBlogPostsJson: IAllBlogPostsJson
+}
+
+export interface IAllBlogPostsJson {
+	edges: IBlogPostNode[]
+}
+export interface IBlogPostNode {
+	node: IBlogPost
+}
+export interface IBlogPost {
+	date: string
+	id: string
+	author: string
+	description: I18nString
+	title: I18nString
+	picture: I18nFluidPicture
 }
 
 const IndexPage = () => {
@@ -115,6 +136,13 @@ const IndexPage = () => {
 							en
 						}
 					}
+
+					blogSection {
+						sectionTitle {
+							en
+							fr
+						}
+					}
 				}
 
 				commonComponents {
@@ -160,13 +188,44 @@ const IndexPage = () => {
 					}
 				}
 			}
+
+			allBlogPostsJson(sort: { fields: date, order: DESC }) {
+				edges {
+					node {
+						date
+						id
+						author
+						description {
+							en
+							fr
+						}
+						title {
+							fr
+							en
+						}
+						picture {
+							alt {
+								en
+								fr
+							}
+							src {
+								childImageSharp {
+									fluid {
+										srcSetWebp
+									}
+								}
+							}
+						}
+					}
+				}
+			}
 		}
 	`)
 
-	const { homePage, commonComponents } = data.dataJson
-	const { presentationSection, theReasonsWhySection } = homePage
+	const { dataJson, allReasonsWhyJson, allBlogPostsJson } = data
+	const { homePage, commonComponents } = dataJson
+	const { presentationSection, theReasonsWhySection, blogSection } = homePage
 	const { requestInviteCta } = commonComponents
-	const { allReasonsWhyJson } = data
 
 	console.log("theReasonsWhySection.theReasonsWhy : ", theReasonsWhySection.theReasonsWhy)
 	console.log("reasonsWhy : ", allReasonsWhyJson)
@@ -187,6 +246,7 @@ const IndexPage = () => {
 				sectionDescription={theReasonsWhySection.sectionDescription}
 				allReasonsWhyJson={allReasonsWhyJson}
 			/>
+			<BlogSection sectionTitle={blogSection.sectionTitle} allBlogPostsJson={allBlogPostsJson} />
 		</Layout>
 	)
 }
