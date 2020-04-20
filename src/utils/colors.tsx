@@ -11,14 +11,14 @@
 
 export const Colors = {
 	primary: {
-		darkBlue: `hsl(233, 26%, 24%)`,
-		limeGreen: `hsl(136, 65%, 51%)`,
-		brightCyan: `hsl(192, 70%, 51%)`,
+		darkBlue: `hsla(233, 26%, 24%, 1)`,
+		limeGreen: `hsla(136, 65%, 51%, 1)`,
+		brightCyan: `hsla(192, 70%, 51%, 1)`,
 	},
 	neutral: {
-		grayishBlue: `hsl(233, 8%, 62%)`,
-		lightGrayishBlue: `hsl(220, 16%, 96%)`,
-		veryLightGray: `hsl(0, 0%, 98%)`,
-		white: `hsl(0, 0%, 100%)`,
+		grayishBlue: `hsla(233, 8%, 62%, 1)`,
+		lightGrayishBlue: `hsla(220, 16%, 96%, 1)`,
+		veryLightGray: `hsla(0, 0%, 98%, 1)`,
+		white: `hsla(0, 0%, 100%, 1)`,
 	},
 }

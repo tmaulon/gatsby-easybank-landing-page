@@ -12,7 +12,7 @@ export const Typography = {
 	},
 	fontSize: {
 		main: `.9375rem`,
-		subtitles: `1.125rem`,
+		subtitles: `1.25rem`,
 		titles: `1.5rem`,
 		mainTitle: `2.4rem`,
 	},

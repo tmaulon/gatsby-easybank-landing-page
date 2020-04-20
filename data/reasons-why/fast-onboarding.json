@@ -1,5 +1,6 @@
 {
 	"id": "fast-onboarding",
+	"order": 3,
 	"title": {
 		"fr": "Intégration rapide",
 		"en": "Fast Onboarding"
@@ -13,6 +14,6 @@
 			"fr": "Icône intégration rapide",
 			"en": "Fast Onboarding icon"
 		},
-		"src": "../images/icon-onboarding.svg"
+		"src": "../images/icon-onboarding.png"
 	}
 }

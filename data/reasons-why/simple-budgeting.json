@@ -1,5 +1,6 @@
 {
 	"id": "simple-budgeting",
+	"order": 2,
 	"title": {
 		"fr": "Budgétisation simple",
 		"en": "Simple budgeting"
@@ -13,6 +14,6 @@
 			"fr": "Icône budgétisation simple",
 			"en": "Simple budgeting icon"
 		},
-		"src": "../images/icon-budgeting.svg"
+		"src": "../images/icon-budgeting.png"
 	}
 }
