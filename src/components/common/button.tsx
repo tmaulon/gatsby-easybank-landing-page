@@ -15,20 +15,19 @@ export const StyledButton = styled.button`
 	font-weight: ${Typography.fontWeight.bold};
 	font-size: ${Typography.fontSize.main};
 	color: ${Colors.neutral.white};
-	background: linear-gradient(90deg, ${Colors.primary.limeGreen}, ${Colors.primary.brightCyan});
+	background-image: linear-gradient(90deg, ${Colors.primary.limeGreen}, ${Colors.primary.brightCyan});
+	background-color: ${Colors.primary.limeGreen};
 	box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.05);
 	border: none;
 	border-radius: 50px;
-	transition-duration: 0.3s;
-	transition-timing-function: linear;
 	outline: 0;
 	cursor: pointer;
-	transition-property: color, background-color;
+	transition: background-color 0.3s linear;
 
 	&:hover,
 	&:focus,
 	&:focus-within {
-		color: ${Colors.neutral.white};
-		background: linear-gradient(${Colors.primary.limeGreen}, ${Colors.primary.brightCyan});
+		background-image: linear-gradient(90deg, hsla(136, 65%, 51%, 0.5), hsla(192, 70%, 51%, 0.5));
+		background-color: hsla(192, 70%, 51%, 0.5);
 	}
 `

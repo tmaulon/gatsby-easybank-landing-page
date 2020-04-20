@@ -1,5 +1,6 @@
 {
 	"id": "online-banking",
+	"order": 1,
 	"title": {
 		"fr": "Services bancaires en ligne",
 		"en": "Online banking"
@@ -13,6 +14,6 @@
 			"fr": "Icône services bancaires en ligne",
 			"en": "Online banking icon"
 		},
-		"src": "../images/icon-online.svg"
+		"src": "../images/icon-online.png"
 	}
 }
