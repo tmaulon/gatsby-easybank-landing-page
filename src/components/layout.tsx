@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { ReactNode } from "react"
+import React, { ReactNode, useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { Header } from "./header"
@@ -13,6 +13,7 @@ import { Footer, ISocialNetwork, IPagesEdges } from "./footer"
 import styled from "styled-components"
 import { Colors } from "../utils/colors"
 import { I18nString, I18nTextCta, I18nCta } from "../utils/i18n"
+import { MobileNavigation } from "./common/mobileNavigation"
 
 export interface ICommonComponents {
 	logo: I18nCta
@@ -91,9 +92,19 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 	const { commonComponents } = dataJson
 	const { logo, socialNetworks, requestInviteCta } = commonComponents
 
+	const [mobileNavigationIsOpen, setMobileNavigationIsOpen] = useState(false)
+
 	return (
 		<>
-			<Header />
+			<Header
+				requestInviteCta={requestInviteCta}
+				mobileNavigationIsOpen={mobileNavigationIsOpen}
+				setMobileNavigationIsOpen={setMobileNavigationIsOpen}
+			/>
+			<MobileNavigation
+				mobileNavigationIsOpen={mobileNavigationIsOpen}
+				setMobileNavigationIsOpen={setMobileNavigationIsOpen}
+			/>
 			<StyledMain>{children}</StyledMain>
 			<Footer logo={logo} socialNetworks={socialNetworks} requestInviteCta={requestInviteCta} allPages={allFile} />
 		</>
@@ -102,4 +113,5 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 const StyledMain = styled.main`
 	background-color: ${Colors.neutral.veryLightGray};
 	overflow: hidden;
+	padding-top: 80px;
 `
