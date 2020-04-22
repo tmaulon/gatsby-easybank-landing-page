@@ -61,8 +61,8 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 							}
 							src {
 								childImageSharp {
-									fluid {
-										srcSetWebp
+									fluid(maxWidth: 40) {
+										...GatsbyImageSharpFluid_withWebp
 									}
 								}
 							}

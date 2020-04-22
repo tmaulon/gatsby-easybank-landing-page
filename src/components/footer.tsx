@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 import { I18nTextCta, I18nCta, I18nFluidPicture, I18nString } from "../utils/i18n"
 import { Logo } from "./common/icons"
 import { Colors } from "../utils/colors"
-import Img from "gatsby-image"
-import { Container, Wrapper } from "./container"
+import Image from "gatsby-image"
+import { Wrapper } from "./container"
 import { capitalisePageName } from "../utils/utils"
 
 export interface ISocialNetwork {
@@ -148,7 +148,7 @@ const SocialNetworkLink = styled.a`
 	width: 100%;
 	display: block;
 `
-const SocialNetworkPicture = styled(Img)`
+const SocialNetworkPicture = styled(Image)`
 	width: auto;
 	height: auto;
 	min-height: 25px;
