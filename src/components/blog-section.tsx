@@ -97,17 +97,12 @@ const Post = styled.li`
 	overflow: hidden;
 `
 const PostThumbnailWrapper = styled.div`
-	/* 325*200 */
 	width: 100%;
 	overflow: hidden;
 	margin: 0 0 20px;
 `
 const PostThumbnail = styled(Img)`
 	min-height: 200px;
-
-	/* @media screen and (min-width: 768px) {
-		margin: 0 0 30px;
-	} */
 `
 const PostContent = styled.div`
 	padding: 30px 28px 40px;

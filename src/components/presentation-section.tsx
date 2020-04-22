@@ -63,7 +63,7 @@ export const PresentationSection = ({
 			<TextContentWrapper>
 				<Title>{sectionTitle.en}</Title>
 				<Text>{sectionDescription.en}</Text>
-				<StyledRequestInviteLink title={requestInviteCta.title.en} to={requestInviteCta.link}>
+				<StyledRequestInviteLink title={requestInviteCta.title.en} href={requestInviteCta.link}>
 					<Button>{requestInviteCta.text.en}</Button>
 				</StyledRequestInviteLink>
 			</TextContentWrapper>
@@ -167,7 +167,7 @@ const Text = styled.p`
 		text-align: left;
 	}
 `
-const StyledRequestInviteLink = styled(Link)`
+const StyledRequestInviteLink = styled.a`
 	display: block;
 	text-align: center;
 	@media screen and (min-width: 768px) {
