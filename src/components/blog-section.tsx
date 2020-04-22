@@ -1,12 +1,28 @@
 import React from "react"
-import { I18nString } from "../utils/i18n"
+import { I18nString, I18nFluidPicture } from "../utils/i18n"
 import { Typography } from "../utils/typography"
 import { Colors } from "../utils/colors"
 import styled from "styled-components"
 import { Wrapper } from "./container"
-import { IAllBlogPostsJson } from "../pages/index"
 import Img from "gatsby-image"
 
+export interface IBlogSection {
+	sectionTitle: I18nString
+}
+export interface IBlogPost {
+	date: string
+	id: string
+	author: string
+	description: I18nString
+	title: I18nString
+	picture: I18nFluidPicture
+}
+export interface IBlogPostNode {
+	node: IBlogPost
+}
+export interface IAllBlogPostsJson {
+	edges: IBlogPostNode[]
+}
 export const BlogSection = ({
 	sectionTitle,
 	allBlogPostsJson,

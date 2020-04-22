@@ -1,74 +1,25 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-
-import { Layout } from "../components/layout"
-import { Image } from "../components/image"
+import { useStaticQuery, graphql } from "gatsby"
+import { Layout, ICommonComponents } from "../components/layout"
 import { SEO } from "../components/seo"
-import { I18nString, I18nPicture, I18nTextCta, I18nFluidPicture } from "../utils/i18n"
-import { PresentationSection } from "../components/presentation-section"
-import { ReasonsWhySection } from "../components/reasons-why-section"
-import { BlogSection } from "../components/blog-section"
+import { I18nTextCta } from "../utils/i18n"
+import { PresentationSection, IPresentationSection } from "../components/presentation-section"
+import { ReasonsWhySection, ITheReasonsWhySection, IReasonsWhyEdges } from "../components/reasons-why-section"
+import { BlogSection, IBlogSection, IAllBlogPostsJson } from "../components/blog-section"
 
-export interface IPresentationSection {
-	sectionTitle: I18nString
-	sectionDescription: I18nString
-	mockupsPicture: I18nFluidPicture
-	desktopBackgroundImage: I18nFluidPicture
-	mobileBackgroundImage: I18nFluidPicture
-}
-export interface ITheReasonsWhySection {
-	sectionTitle: I18nString
-	sectionDescription: I18nString
-	theReasonsWhy: string[]
-}
-export interface IBlogSection {
-	sectionTitle: I18nString
-}
-export interface ICommonComponents {
-	requestInviteCta: I18nTextCta
-}
 interface IHomePage {
 	presentationSection: IPresentationSection
 	theReasonsWhySection: ITheReasonsWhySection
 	blogSection: IBlogSection
 }
-
 interface IDataJson {
 	homePage: IHomePage
 	commonComponents: ICommonComponents
-}
-export interface IReasonWhy {
-	id: string
-	order: number
-	title: I18nString
-	description: I18nString
-	picture: I18nFluidPicture
-}
-interface IReasonWhyNode {
-	node: IReasonWhy
-}
-export interface IReasonsWhyEdges {
-	edges: IReasonWhyNode[]
 }
 interface IData {
 	dataJson: IDataJson
 	allReasonsWhyJson: IReasonsWhyEdges
 	allBlogPostsJson: IAllBlogPostsJson
-}
-
-export interface IAllBlogPostsJson {
-	edges: IBlogPostNode[]
-}
-export interface IBlogPostNode {
-	node: IBlogPost
-}
-export interface IBlogPost {
-	date: string
-	id: string
-	author: string
-	description: I18nString
-	title: I18nString
-	picture: I18nFluidPicture
 }
 
 const IndexPage = () => {
@@ -146,6 +97,13 @@ const IndexPage = () => {
 				}
 
 				commonComponents {
+					logo {
+						title {
+							fr
+							en
+						}
+						link
+					}
 					requestInviteCta {
 						link
 						text {

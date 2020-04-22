@@ -42,3 +42,7 @@ export interface I18nTextCta {
 	title: I18nString
 	link: string
 }
+export interface I18nCta {
+	title: I18nString
+	link: string
+}
