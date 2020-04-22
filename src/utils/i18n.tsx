@@ -1,4 +1,4 @@
-import { ImageSource, IFluidSharpImageSource, IFixedSharpImageSource } from "./sharpImage"
+import { IFluidSharpImageSource, IFixedSharpImageSource } from "./sharpImage"
 
 export type Locale = "fr" | "en"
 

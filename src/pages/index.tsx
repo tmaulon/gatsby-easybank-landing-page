@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { Layout, ICommonComponents } from "../components/layout"
 import { SEO } from "../components/seo"
-import { I18nTextCta } from "../utils/i18n"
 import { PresentationSection, IPresentationSection } from "../components/presentation-section"
 import { ReasonsWhySection, ITheReasonsWhySection, IReasonsWhyEdges } from "../components/reasons-why-section"
 import { BlogSection, IBlogSection, IAllBlogPostsJson } from "../components/blog-section"
@@ -35,7 +34,7 @@ const IndexPage = () => {
 							}
 							src {
 								childImageSharp {
-									fluid {
+									fluid(maxHeight: 900) {
 										...GatsbyImageSharpFluid_withWebp
 									}
 								}
@@ -56,7 +55,7 @@ const IndexPage = () => {
 							}
 							src {
 								childImageSharp {
-									fluid {
+									fluid(maxWidth: 650) {
 										...GatsbyImageSharpFluid_withWebp
 									}
 								}
@@ -69,7 +68,7 @@ const IndexPage = () => {
 							}
 							src {
 								childImageSharp {
-									fluid {
+									fluid(maxWidth: 500) {
 										...GatsbyImageSharpFluid_withWebp
 									}
 								}
@@ -137,7 +136,7 @@ const IndexPage = () => {
 							}
 							src {
 								childImageSharp {
-									fluid {
+									fluid(maxWidth: 75) {
 										...GatsbyImageSharpFluid_withWebp
 									}
 								}
@@ -168,8 +167,8 @@ const IndexPage = () => {
 							}
 							src {
 								childImageSharp {
-									fluid {
-										srcSetWebp
+									fluid(maxWidth: 400) {
+										...GatsbyImageSharpFluid_withWebp
 									}
 								}
 							}
@@ -184,9 +183,6 @@ const IndexPage = () => {
 	const { homePage, commonComponents } = dataJson
 	const { presentationSection, theReasonsWhySection, blogSection } = homePage
 	const { requestInviteCta } = commonComponents
-
-	console.log("theReasonsWhySection.theReasonsWhy : ", theReasonsWhySection.theReasonsWhy)
-	console.log("reasonsWhy : ", allReasonsWhyJson)
 
 	return (
 		<Layout>

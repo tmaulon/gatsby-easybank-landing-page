@@ -114,6 +114,11 @@ export function SEO({
 							},
 					  ]
 			}
-		/>
+		>
+			<link
+				href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;600;700&display=swap"
+				rel="stylesheet"
+			/>
+		</Helmet>
 	)
 }
