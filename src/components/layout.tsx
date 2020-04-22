@@ -9,26 +9,93 @@ import React, { ReactNode } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import { Header } from "./header"
-import { Footer } from "./footer"
+import { Footer, ISocialNetwork, IPagesEdges } from "./footer"
 import styled from "styled-components"
 import { Colors } from "../utils/colors"
+import { I18nString, I18nTextCta, I18nCta } from "../utils/i18n"
 
+export interface ICommonComponents {
+	logo: I18nCta
+	socialNetworks: ISocialNetwork[]
+	requestInviteCta: I18nTextCta
+}
+interface ILayoutDataJson {
+	commonComponents: ICommonComponents
+}
+interface ILayoutData {
+	site: { siteMetadata: { title: I18nString } }
+	allFile: IPagesEdges
+	dataJson: ILayoutDataJson
+}
 export const Layout = ({ children }: { children: ReactNode }) => {
-	const data = useStaticQuery(graphql`
-		query SiteTitleQuery {
+	const data: ILayoutData = useStaticQuery(graphql`
+		query HeaderAndFooterQueryAndSiteTitleQuery {
 			site {
 				siteMetadata {
 					title
 				}
 			}
+			allFile(filter: { sourceInstanceName: { eq: "pages" }, name: { regex: "/^(?!index|404).*$/" } }) {
+				edges {
+					node {
+						id
+						name
+					}
+				}
+			}
+			dataJson {
+				commonComponents {
+					logo {
+						title {
+							fr
+							en
+						}
+						link
+					}
+					socialNetworks {
+						icon {
+							alt {
+								fr
+								en
+							}
+							src {
+								childImageSharp {
+									fluid {
+										srcSetWebp
+									}
+								}
+							}
+						}
+						title {
+							fr
+							en
+						}
+						link
+					}
+					requestInviteCta {
+						link
+						text {
+							en
+							fr
+						}
+						title {
+							en
+							fr
+						}
+					}
+				}
+			}
 		}
 	`)
+	const { dataJson, site, allFile } = data
+	const { commonComponents } = dataJson
+	const { logo, socialNetworks, requestInviteCta } = commonComponents
 
 	return (
 		<>
 			<Header />
 			<StyledMain>{children}</StyledMain>
-			<Footer />
+			<Footer logo={logo} socialNetworks={socialNetworks} requestInviteCta={requestInviteCta} allPages={allFile} />
 		</>
 	)
 }

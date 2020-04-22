@@ -1,12 +1,29 @@
 import React from "react"
-import { I18nString } from "../utils/i18n"
+import { I18nString, I18nFluidPicture } from "../utils/i18n"
 import { Typography } from "../utils/typography"
 import { Colors } from "../utils/colors"
 import styled from "styled-components"
 import { Wrapper } from "./container"
-import { IReasonsWhyEdges } from "../pages/index"
 import Img from "gatsby-image"
 
+export interface ITheReasonsWhySection {
+	sectionTitle: I18nString
+	sectionDescription: I18nString
+	theReasonsWhy: string[]
+}
+export interface IReasonWhy {
+	id: string
+	order: number
+	title: I18nString
+	description: I18nString
+	picture: I18nFluidPicture
+}
+interface IReasonWhyNode {
+	node: IReasonWhy
+}
+export interface IReasonsWhyEdges {
+	edges: IReasonWhyNode[]
+}
 export const ReasonsWhySection = ({
 	sectionTitle,
 	sectionDescription,

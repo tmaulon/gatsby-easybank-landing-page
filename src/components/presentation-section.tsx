@@ -9,6 +9,13 @@ import { Typography } from "../utils/typography"
 import { Colors } from "../utils/colors"
 import { Button } from "./common/button"
 
+export interface IPresentationSection {
+	sectionTitle: I18nString
+	sectionDescription: I18nString
+	mockupsPicture: I18nFluidPicture
+	desktopBackgroundImage: I18nFluidPicture
+	mobileBackgroundImage: I18nFluidPicture
+}
 export const PresentationSection = ({
 	sectionTitle,
 	sectionDescription,
@@ -56,9 +63,9 @@ export const PresentationSection = ({
 			<TextContentWrapper>
 				<Title>{sectionTitle.en}</Title>
 				<Text>{sectionDescription.en}</Text>
-				<StyledLink title={requestInviteCta.title.en} to={requestInviteCta.link}>
+				<StyledRequestInviteLink title={requestInviteCta.title.en} to={requestInviteCta.link}>
 					<Button>{requestInviteCta.text.en}</Button>
-				</StyledLink>
+				</StyledRequestInviteLink>
 			</TextContentWrapper>
 		</StyledContainer>
 	</StyledSection>
@@ -160,7 +167,7 @@ const Text = styled.p`
 		text-align: left;
 	}
 `
-const StyledLink = styled(Link)`
+const StyledRequestInviteLink = styled(Link)`
 	display: block;
 	text-align: center;
 	@media screen and (min-width: 768px) {
