@@ -79,7 +79,7 @@ export const Footer = ({
 					</FooterNav>
 				</Col>
 				<Col>
-					<StyledRequestInviteLink title={requestInviteCta.title.en} to={requestInviteCta.link}>
+					<StyledRequestInviteLink title={requestInviteCta.title.en} href={requestInviteCta.link}>
 						<Button>{requestInviteCta.text.en}</Button>
 					</StyledRequestInviteLink>
 					<RightReservedParagraph>
@@ -176,7 +176,7 @@ const FooterNavLink = styled(Link)`
 	color: ${Colors.neutral.white};
 	text-decoration: none;
 `
-const StyledRequestInviteLink = styled(Link)`
+const StyledRequestInviteLink = styled.a`
 	display: block;
 	text-align: center;
 	@media screen and (min-width: 768px) {
