@@ -34,7 +34,7 @@ export const HamburgerMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
 		<path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
 	</svg>
 )
-export const CloseIcon = (props: React.SVGProps<SVGSVGElement>) => (
+export const CloseMenuIcon = (props: React.SVGProps<SVGSVGElement>) => (
 	<svg width="18" height="19" {...props}>
 		<path d="M.868.661l16.97 16.97-.706.708L.162 1.369z" />
 		<path d="M.161 17.632L17.131.662l.708.706-16.97 16.97z" />
