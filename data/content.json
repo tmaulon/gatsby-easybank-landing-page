@@ -64,11 +64,11 @@
 	},
 	"commonComponents": {
 		"logo": {
-			"alt": {
-				"fr": "Logo Easybank - Banque numérique de nouvelle génération",
-				"en": "Easybank Logo - Next generation digital banking"
+			"title": {
+				"fr": "Cliquez sur Logo Easybank pour retourner sur la page d'acceuil - Banque numérique de nouvelle génération",
+				"en": "Click on Easybank Logo to return to the home page  - Next generation digital banking"
 			},
-			"src": "./images/logo.png"
+			"link": "/"
 		},
 		"socialNetworks": [
 			{
