@@ -64,7 +64,7 @@ export const PresentationSection = ({
 				<Title>{sectionTitle.en}</Title>
 				<Text>{sectionDescription.en}</Text>
 				<StyledRequestInviteLink title={requestInviteCta.title.en} href={requestInviteCta.link}>
-					<Button>{requestInviteCta.text.en}</Button>
+					<Button aria-label="Presentation Section Request Invite CTA">{requestInviteCta.text.en}</Button>
 				</StyledRequestInviteLink>
 			</TextContentWrapper>
 		</StyledContainer>

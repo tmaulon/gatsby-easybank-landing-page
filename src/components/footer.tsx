@@ -80,7 +80,7 @@ export const Footer = ({
 				</Col>
 				<Col>
 					<StyledRequestInviteLink title={requestInviteCta.title.en} href={requestInviteCta.link}>
-						<Button>{requestInviteCta.text.en}</Button>
+						<Button aria-label="Footer Request Invite CTA">{requestInviteCta.text.en}</Button>
 					</StyledRequestInviteLink>
 					<RightReservedParagraph>
 						© {new Date().getFullYear()}

@@ -59,16 +59,18 @@ export const Header = ({
 				</NavList>
 			</Nav>
 			<StyledRequestInviteLink title={requestInviteCta.title.en} href={requestInviteCta.link}>
-				<Button>{requestInviteCta.text.en}</Button>
+				<Button aria-label="Header Request Invite CTA">{requestInviteCta.text.en}</Button>
 			</StyledRequestInviteLink>
 			<MobileNavigationButtonWrapper>
 				<OpenMobileNavigationButton
+					aria-label="Header Open Mobile Navigation"
 					mobileNavigationIsOpen={mobileNavigationIsOpen}
 					onClick={() => setMobileNavigationIsOpen(!mobileNavigationIsOpen)}
 				>
 					<HamburgerMenuIcon />
 				</OpenMobileNavigationButton>
 				<CloseMobileNavigationButton
+					aria-label="Header Close Mobile Navigation"
 					mobileNavigationIsOpen={mobileNavigationIsOpen}
 					onClick={() => setMobileNavigationIsOpen(!mobileNavigationIsOpen)}
 				>
