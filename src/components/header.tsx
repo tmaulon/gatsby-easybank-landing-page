@@ -25,6 +25,7 @@ export const Header = ({
 						color: `white`,
 						textDecoration: `none`,
 					}}
+					aria-label="Header Logo link"
 				>
 					<Logo fill={Colors.primary.darkBlue} />
 				</NavLink>
@@ -32,27 +33,27 @@ export const Header = ({
 			<Nav>
 				<NavList>
 					<NavItem>
-						<NavLink title="Go to Home Page" to={`/`}>
+						<NavLink aria-label="Header Navlink for Home Page" title="Go to Home Page" to={`/`}>
 							Home
 						</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink title="Go to About us Page" to={`/about/`}>
+						<NavLink aria-label="Header Navlink for About us Page" title="Go to About us Page" to={`/about/`}>
 							About
 						</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink title="Go to Contact Page" to={`/contact/`}>
+						<NavLink aria-label="Header Navlink for Contact Page" title="Go to Contact Page" to={`/contact/`}>
 							Contact
 						</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink title="Go to Blog Page" to={`/blog/`}>
+						<NavLink aria-label="Header Navlink for Blog Page" title="Go to Blog Page" to={`/blog/`}>
 							Blog
 						</NavLink>
 					</NavItem>
 					<NavItem>
-						<NavLink title="Go to Careers Page" to={`/careers/`}>
+						<NavLink aria-label="Header Navlink for Careers Page" title="Go to Careers Page" to={`/careers/`}>
 							Careers
 						</NavLink>
 					</NavItem>
