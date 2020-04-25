@@ -2,10 +2,6 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import { Colors } from "../../utils/colors"
-// import { Logo, HamburgerMenuIcon, CloseIcon, CloseMenuIcon } from "./common/icons"
-// import { Container, Wrapper } from "./container"
-// import { Button } from "./common/button"
-// import { I18nTextCta } from "../utils/i18n"
 
 export const MobileNavigation = ({
 	mobileNavigationIsOpen,
